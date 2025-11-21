@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { AiOutlineInfoCircle } from "react-icons/ai";
-import rajImg from "../assets/self.jpeg";
+import rajImg from "../assets/self.jpg";
 import { Helmet } from "react-helmet";
 
 const About = () => {
