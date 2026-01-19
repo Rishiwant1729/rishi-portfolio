@@ -2,14 +2,16 @@ import { useState } from "react";
 import "./App.css";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { Hero, Navbar } from "./components";
-import { About, Projects, Skills, Contact, Fof, Shutter, Call } from "./pages";
+import { About, Projects, Skills, Contact, Fof, Call } from "./pages";
 import { AnimatePresence } from "framer-motion";
 import Current from "./pages/Current";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const { pathname } = useLocation();
-  console.log(location);
+  const location = useLocation();
+  const { pathname } = location;
+  // TODO: Remove console.log before production
+  // console.log(location);
   return (
     <>
       <div className="grid place-items-center h-[100vh]">
@@ -65,7 +67,6 @@ function App() {
             <Route path="/projects/current" element={<Current />}></Route>
             <Route path="/skills" element={<Skills />}></Route>
             <Route path="/contact" element={<Contact />}></Route>
-            <Route path="/shutterbug" element={<Shutter />}></Route>
             <Route path="/call" element={<Call />}></Route>
             <Route path="/*" element={<Fof />}></Route>
           </Routes>

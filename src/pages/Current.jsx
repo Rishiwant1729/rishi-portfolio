@@ -1,4 +1,5 @@
-// look for it is mislanious
+// TODO: Review and update current projects list with your actual ongoing work
+// Update 'ongoing' and 'planned' arrays in constants/index.js
 
 import React from "react";
 import { motion } from "framer-motion";

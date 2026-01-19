@@ -52,7 +52,7 @@ const Hero = () => {
         </h1>
         <h2>
           <p className="text-center text-white font-mono mt-2 text-lg tracking-widest">
-            I learn. I buidl. I ship.
+            I learn. I build. I ship.
           </p>
         </h2>
         <div className="flex flex-row justify-evenly mt-10">
@@ -103,8 +103,7 @@ const Hero = () => {
             </p>
             <p>for Tech Roles?</p>
           </div>
-          {/* resume ka drive link daal de idhar  */}
-          {/* ho gaya */}
+          {/* TODO: Update resume link with your current resume - keep in sync with desktop version above */}
           <a
             href="https://drive.google.com/file/d/1kQPvD57gZ3nwepgZeqAEHHuMm3NsXUBA/view?usp=sharing"
             target="_blank"

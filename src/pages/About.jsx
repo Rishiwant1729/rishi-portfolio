@@ -40,9 +40,9 @@ const About = () => {
       </Helmet>
       <div className="md:w-[70vw] w-[90vw] md:h-[80vh] h-[100vh] p-5 lg:p-10">
         <h1 className="text-center text-white md:text-5xl sm:text-3xl text-xl font-bold mb-5">
-          About Me:
+          About Me:-
         </h1>
-        <div className="flex flex-col-reverse md:flex-row ">
+        <div className="flex flex-col-reverse md:flex-row">
           <div className="about-me-text lg:px-10 p-2 py-10 md:text-2xl sm:text-xl text-sm font-mono text-white/70">
             <p className=" ">
               I am{" "}
@@ -58,7 +58,7 @@ const About = () => {
           </div>
 
           <div className="sm:w-[500px] w-1/2 m-auto">
-          {/* tera photo ka link jayega */}
+          {/* TODO: Replace rajImg with your actual profile photo */}
             <img
               src={rajImg}
               className=" w-full ease-in aspect-square object-cover rounded-[50%]"

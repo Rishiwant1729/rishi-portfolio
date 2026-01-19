@@ -43,7 +43,7 @@ const Contact = () => {
           <div className="md:w-[50%] w-[100%]  my-16">
             <div className="text-white mb-16">
               <h1 className="text-bold text-2xl font-semibold">Need a chat?</h1>
-              {/* cal.com done  */}
+              {/* TODO: Update Calendly/cal.com link with your actual booking URL */}
               <a href="https://cal.com/rishiwant-krek/15min" target="_blank">
                 <p className="my-5 text-center underline underline-offset-8 font-sans-serif text-xl w-fit mx-auto p-1 tracking-widest hover:bg-[#ef4444]/10 transition rounded-sm	">
                   Schedule a meeting
@@ -53,7 +53,7 @@ const Contact = () => {
             <h2 className="text-white font-bold text-2xl mb-3">
               Send A Message
             </h2>
-            {/* form data lene ka link ho gaya */}
+            {/* TODO: Verify GetForm endpoint is active and receiving submissions */}
             <form
               action="https://getform.io/f/aejezolb"
               method="POST"
@@ -137,6 +137,7 @@ const Contact = () => {
               <h1 className="text-bold text-2xl font-semibold">
                 Or you can write a mail directly to
               </h1>
+              {/* TODO: Update email address - currently has mismatch between href and display text */}
               <a href="mailto:hi@rajaryan.work">
                 <p className="my-5 text-center underline underline-offset-8 font-sans-serif text-xl tracking-widest	">
                   rishiwant.maurya2024@nst.rishihood.edu.in

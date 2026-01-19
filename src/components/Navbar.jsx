@@ -56,7 +56,7 @@ const Navbar = () => {
           </div>
         </Link>
 
-        {/* remove this  */}
+        {/* TODO: Remove this link - Shutterbug page needs to be deleted or completed */}
         <Link to='/shutterbug'>
 
                 <div className='grid place-items-center rounded-[50%] w-10 h-10'>

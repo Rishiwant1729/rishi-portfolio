@@ -8,7 +8,7 @@ const TechCard = ({ item }) => (
   <div className="md:p-10 p-5 bg-neutral-800 grid place-items-center aspect-square rounded-md m-2 hover: hover:fill-[#ef4444] hover:text-[#ef4444] ease-in duration-150">
     {item.className ? (
       <i
-        className={`fa-brands ${item.className || ""} md:text-5xl text-3xl `}
+        className={`fa-brands ${item.className || ""} md:text-6xl text-4xl `}
       ></i>
     ) : (
       ""
@@ -17,7 +17,7 @@ const TechCard = ({ item }) => (
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox={`${item.viewBox}`}
-        width={"3rem"}
+        width={"4rem"}
       >
         <path d={item.path} />
       </svg>
@@ -26,7 +26,7 @@ const TechCard = ({ item }) => (
     )}
     {item.src ? (
       <img
-        className="w-[3rem] brightness-0 hover:brightness-100 ease-in duration-150"
+        className="w-[4rem] brightness-0 hover:brightness-100 ease-in duration-150"
         src={item.src}
         alt=""
       />
