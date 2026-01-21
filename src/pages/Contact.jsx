@@ -1,9 +1,39 @@
 import { motion } from "framer-motion";
-import React from "react";
+import React, { useState } from "react";
 import { socialIcons } from "../constants";
 import { Helmet } from "react-helmet";
 
 const Contact = () => {
+  const [formStatus, setFormStatus] = useState(null); // null, 'success', 'error'
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsLoading(true);
+
+    const formData = new FormData(e.target);
+
+    try {
+      const response = await fetch("https://getform.io/f/aejezolb", {
+        method: "POST",
+        body: formData,
+      });
+
+      if (response.ok) {
+        setFormStatus("success");
+        e.target.reset();
+        // Auto-clear success message after 5 seconds
+        setTimeout(() => setFormStatus(null), 5000);
+      } else {
+        setFormStatus("error");
+      }
+    } catch (error) {
+      setFormStatus("error");
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -15,12 +45,12 @@ const Contact = () => {
         <title>Contact Me - Rishiwant</title>
         <meta
           name="description"
-          content="Get in touch with Rishiwant. Schedule a meeting, send a message, or reach out through various social media channels. Feel free to write an email directly to hi@rajaryan.work"
+          content="Get in touch with Rishiwant. Schedule a meeting, send a message, or reach out through various social media channels. Feel free to write an email directly to rishiwant.maurya2024@nst.rishihood.edu.in"
         />
         <meta property="og:title" content="Contact Me - Rishiwant" />
         <meta
           property="og:description"
-          content="Get in touch with Rishiwant. Schedule a meeting, send a message, or reach out through various social media channels. Feel free to write an email directly to hi@rajaryan.work"
+          content="Get in touch with Rishiwant. Schedule a meeting, send a message, or reach out through various social media channels. Feel free to write an email directly to rishiwant.maurya2024@nst.rishihood.edu.in"
         />
         <meta property="og:image" content="http://localhost:5173/banner.png" />
         <meta property="og:url" content="http://localhost:5173/contact" />
@@ -29,7 +59,7 @@ const Contact = () => {
         <meta name="twitter:title" content="Contact Me - Rishiwant" />
         <meta
           name="twitter:description"
-          content="Get in touch with Rishiwant. Schedule a meeting, send a message, or reach out through various social media channels. Feel free to write an email directly to hi@rajaryan.work"
+          content="Get in touch with Rishiwant. Schedule a meeting, send a message, or reach out through various social media channels. Feel free to write an email directly to rishiwant.maurya2024@nst.rishihood.edu.in"
         />
         <meta name="twitter:image" content="http://localhost:5173/banner.png" />
       </Helmet>
@@ -55,10 +85,7 @@ const Contact = () => {
             </h2>
             {/* TODO: Verify GetForm endpoint is active and receiving submissions */}
             <form
-              action="https://getform.io/f/aejezolb"
-              method="POST"
-              target="_blank"
-              onSubmit={""}
+              onSubmit={handleSubmit}
             >
               <div className="flex flex-row  justify-between">
                 <input
@@ -112,10 +139,21 @@ const Contact = () => {
                 />
                 <button
                   type="submit"
-                  className="bg-[#ef4444] hover:bg-red-800 ease-in-out duration-150 text-white  w-fit self-center p-2 px-4 rounded-lg"
+                  disabled={isLoading}
+                  className="bg-[#ef4444] hover:bg-red-800 ease-in-out duration-150 text-white  w-fit self-center p-2 px-4 rounded-lg disabled:opacity-50"
                 >
-                  Submit
+                  {isLoading ? "Sending..." : "Submit"}
                 </button>
+                {formStatus === "success" && (
+                  <div className="text-center text-green-400 font-semibold">
+                    ✓ Thank you! Message sent successfully.
+                  </div>
+                )}
+                {formStatus === "error" && (
+                  <div className="text-center text-red-400 font-semibold">
+                    ✗ Failed to send. Please try again or email directly.
+                  </div>
+                )}
               </div>
             </form>
           </div>
@@ -138,7 +176,7 @@ const Contact = () => {
                 Or you can write a mail directly to
               </h1>
               {/* TODO: Update email address - currently has mismatch between href and display text */}
-              <a href="mailto:hi@rajaryan.work">
+              <a href="mailto:rishiwant.maurya2024@nst.rishihood.edu.in">
                 <p className="my-5 text-center underline underline-offset-8 font-sans-serif text-xl tracking-widest	">
                   rishiwant.maurya2024@nst.rishihood.edu.in
                 </p>
