@@ -57,9 +57,9 @@ const Skills = () => {
           content="Discover the wide range of technical skills that Rishiwant possesses. From web development to various tools and technologies, Rishi's skill set encompasses an array of technologies to bring innovative solutions to life."
         />
         {/* banner ka link chalega */}
-        <meta property="og:image" content="http://localhost:5173/banner.png" />
+        <meta property="og:image" content="https://rishi-portfolio-flame.vercel.app/banner.png" />
         {/* skill page ka link */}
-        <meta property="og:url" content="http://localhost:5173/skills" />
+        <meta property="og:url" content="https://rishi-portfolio-flame.vercel.app/skills" />
 
         {/* Twitter Card tags */}
         <meta name="twitter:card" content="summary_large_image" />

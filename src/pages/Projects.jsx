@@ -77,9 +77,9 @@ const Projects = () => {
           content="Explore a collection of projects developed by Rishiwant. From web development to Freelance projects, discover the diverse projects that showcase Rishi's skills and expertise."
         />
         {/* banner ka image link */}
-        <meta property="og:image" content="http://localhost:5173/banner.png" />
+        <meta property="og:image" content="https://rishi-portfolio-flame.vercel.app/banner.png" />
         {/* Project page ka link jayega */}
-        <meta property="og:url" content="http://localhost:5173/projects" />
+        <meta property="og:url" content="https://rishi-portfolio-flame.vercel.app/projects" />
 
         {/* Twitter Card tags */}
         <meta name="twitter:card" content="summary_large_image" />

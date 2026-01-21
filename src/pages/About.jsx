@@ -26,7 +26,7 @@ const About = () => {
         />
         {/* khud ka photo */}
         <meta property="og:image" content={rajImg} />
-        <meta property="og:url" content="http://localhost:5173/about" />
+        <meta property="og:url" content="https://rishi-portfolio-flame.vercel.app/about" />
 
         {/* Twitter Card tags */}
         <meta name="twitter:card" content="summary_large_image" />

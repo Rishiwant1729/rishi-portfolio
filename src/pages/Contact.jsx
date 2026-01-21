@@ -52,8 +52,8 @@ const Contact = () => {
           property="og:description"
           content="Get in touch with Rishiwant. Schedule a meeting, send a message, or reach out through various social media channels. Feel free to write an email directly to rishiwant.maurya2024@nst.rishihood.edu.in"
         />
-        <meta property="og:image" content="http://localhost:5173/banner.png" />
-        <meta property="og:url" content="http://localhost:5173/contact" />
+        <meta property="og:image" content="https://rishi-portfolio-flame.vercel.app/banner.png" />
+        <meta property="og:url" content="https://rishi-portfolio-flame.vercel.app/contact" />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Contact Me - Rishiwant" />
@@ -61,7 +61,7 @@ const Contact = () => {
           name="twitter:description"
           content="Get in touch with Rishiwant. Schedule a meeting, send a message, or reach out through various social media channels. Feel free to write an email directly to rishiwant.maurya2024@nst.rishihood.edu.in"
         />
-        <meta name="twitter:image" content="http://localhost:5173/banner.png" />
+        <meta name="twitter:image" content="https://rishi-portfolio-flame.vercel.app/banner.png" />
       </Helmet>
 
       <div className="md:w-[70vw] w-[90vw] md:h-[80vh] h-[100vh] p-10">

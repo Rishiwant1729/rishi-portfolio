@@ -28,7 +28,7 @@ const Hero = () => {
         />
         <meta property="og:image" content={HeroImg} />
         {/* project page ljnk */}
-        <meta property="og:url" content="http://localhost:5173" />
+        <meta property="og:url" content="https://rishi-portfolio-flame.vercel.app/" />
         <meta property="og:type" content="website" />
         {/* Twitter Card tags */}
         <meta name="twitter:card" content="summary_large_image" />
