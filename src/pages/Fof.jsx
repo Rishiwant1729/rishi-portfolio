@@ -7,10 +7,10 @@ import { motion } from 'framer-motion'
 const Fof = () => {
   return (
     <motion.div className='flex flex-col'
-    initial={{ y:'50%', opacity: 0 }}
-    animate={{ opacity: 1,y:"0" }}
-transition={{ ease:'easeIn', duration:'0.5',type:'spring' }}
-exit={{x:'-100%'}}>
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ ease: 'easeIn', duration: 0.1 }}
+    exit={{ opacity: 0 }}>
         <div className='text-white text-3xl md:text-5xl font-bold'>
           <h1>You look A little Lost</h1>
           <Link to='/'>

@@ -39,10 +39,10 @@ const TechCard = ({ item }) => (
 const Skills = () => {
   return (
     <motion.div
-      initial={{ y: "50%", opacity: 0 }}
-      animate={{ opacity: 1, y: "0" }}
-      transition={{ ease: "easeIn", duration: "0.5", type: "spring" }}
-      exit={{ x: "-100%" }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ ease: "easeIn", duration: 0.1 }}
+      exit={{ opacity: 0 }}
     >
       <Helmet>
         <title>My Tech Skills - Rishiwant</title>
@@ -57,9 +57,9 @@ const Skills = () => {
           content="Discover the wide range of technical skills that Rishiwant possesses. From web development to various tools and technologies, Rishi's skill set encompasses an array of technologies to bring innovative solutions to life."
         />
         {/* banner ka link chalega */}
-        <meta property="og:image" content="https://rajaryan.work/banner.png" />
+        <meta property="og:image" content="http://localhost:5173/banner.png" />
         {/* skill page ka link */}
-        <meta property="og:url" content="https://rajaryan.work/skills" />
+        <meta property="og:url" content="http://localhost:5173/skills" />
 
         {/* Twitter Card tags */}
         <meta name="twitter:card" content="summary_large_image" />

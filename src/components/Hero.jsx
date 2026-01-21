@@ -11,8 +11,8 @@ const Hero = () => {
       className="flex md:flex-row flex-col-reverse justify-evenly items-center w-[100vw] gap-10"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ ease: "easeIn", duration: "1", type: "spring" }}
-      exit={{ x: "-100%" }}
+      transition={{ ease: "easeIn", duration: 0.1 }}
+      exit={{ opacity: 0 }}
     >
       <Helmet>
         <title>Rishiwant - Web Developer</title>
@@ -28,7 +28,7 @@ const Hero = () => {
         />
         <meta property="og:image" content={HeroImg} />
         {/* project page ljnk */}
-        <meta property="og:url" content="https://rajaryan.work" />
+        <meta property="og:url" content="http://localhost:5173" />
         <meta property="og:type" content="website" />
         {/* Twitter Card tags */}
         <meta name="twitter:card" content="summary_large_image" />

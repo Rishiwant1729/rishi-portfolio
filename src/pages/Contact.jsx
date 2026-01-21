@@ -6,10 +6,10 @@ import { Helmet } from "react-helmet";
 const Contact = () => {
   return (
     <motion.div
-      initial={{ y: "50%", opacity: 0 }}
-      animate={{ opacity: 1, y: "0" }}
-      transition={{ ease: "easeIn", duration: "0.5", type: "spring" }}
-      exit={{ x: "-100%" }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ ease: "easeIn", duration: 0.1 }}
+      exit={{ opacity: 0 }}
     >
       <Helmet>
         <title>Contact Me - Rishiwant</title>
@@ -22,8 +22,8 @@ const Contact = () => {
           property="og:description"
           content="Get in touch with Rishiwant. Schedule a meeting, send a message, or reach out through various social media channels. Feel free to write an email directly to hi@rajaryan.work"
         />
-        <meta property="og:image" content="https://rajaryan.work/banner.png" />
-        <meta property="og:url" content="https://rajaryan.work/contact" />
+        <meta property="og:image" content="http://localhost:5173/banner.png" />
+        <meta property="og:url" content="http://localhost:5173/contact" />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Contact Me - Rishiwant" />
@@ -31,7 +31,7 @@ const Contact = () => {
           name="twitter:description"
           content="Get in touch with Rishiwant. Schedule a meeting, send a message, or reach out through various social media channels. Feel free to write an email directly to hi@rajaryan.work"
         />
-        <meta name="twitter:image" content="https://rajaryan.work/banner.png" />
+        <meta name="twitter:image" content="http://localhost:5173/banner.png" />
       </Helmet>
 
       <div className="md:w-[70vw] w-[90vw] md:h-[80vh] h-[100vh] p-10">

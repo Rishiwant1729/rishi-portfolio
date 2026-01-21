@@ -7,10 +7,10 @@ import { Helmet } from "react-helmet";
 const About = () => {
   return (
     <motion.div
-      initial={{ y: "50%", opacity: 0 }}
-      animate={{ opacity: 1, y: "0" }}
-      transition={{ ease: "easeIn", duration: "0.5", type: "spring" }}
-      exit={{ x: "-100%" }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ ease: "easeIn", duration: 0.1 }}
+      exit={{ opacity: 0 }}
     >
       <Helmet>
         <title>About Me - Risiwant</title>
@@ -26,7 +26,7 @@ const About = () => {
         />
         {/* khud ka photo */}
         <meta property="og:image" content={rajImg} />
-        <meta property="og:url" content="Your page URL here" />
+        <meta property="og:url" content="http://localhost:5173/about" />
 
         {/* Twitter Card tags */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -43,7 +43,7 @@ const About = () => {
           About Me:-
         </h1>
         <div className="flex flex-col-reverse md:flex-row">
-          <div className="about-me-text lg:px-10 p-2 py-10 md:text-2xl sm:text-xl text-sm font-mono text-white/70">
+          <div className="about-me-text lg:px-10 p-2 py-10 md:text-3xl sm:text-xl text-base font-mono text-white/70">
             <p className=" ">
               I am{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#EF4444] to-[#2f2e41] text-ellipsis">
@@ -57,7 +57,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className="sm:w-[500px] w-1/2 m-auto">
+          <div className="md:w-[750px] sm:w-[600px] w-full m-auto">
           {/* TODO: Replace rajImg with your actual profile photo */}
             <img
               src={rajImg}

@@ -59,10 +59,10 @@ const ProjectCard = ({ item }) => (
 const Projects = () => {
   return (
     <motion.div
-      initial={{ y: "50%", opacity: 0 }}
-      animate={{ opacity: 1, y: "0" }}
-      transition={{ ease: "easeIn", duration: "0.5", type: "spring" }}
-      exit={{ x: "-100%" }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ ease: "easeIn", duration: 0.1 }}
+      exit={{ opacity: 0 }}
     >
        <Helmet>
         <title>My Projects - Rishiwant</title>
@@ -77,9 +77,9 @@ const Projects = () => {
           content="Explore a collection of projects developed by Rishiwant. From web development to Freelance projects, discover the diverse projects that showcase Rishi's skills and expertise."
         />
         {/* banner ka image link */}
-        <meta property="og:image" content="https://rajaryan.work/banner.png" />
+        <meta property="og:image" content="http://localhost:5173/banner.png" />
         {/* Project page ka link jayega */}
-        <meta property="og:url" content="https://rajaryan.work/projects" />
+        <meta property="og:url" content="http://localhost:5173/projects" />
 
         {/* Twitter Card tags */}
         <meta name="twitter:card" content="summary_large_image" />

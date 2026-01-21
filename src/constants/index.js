@@ -2,7 +2,6 @@ import {
   pnrimg,
   qrgenimg,
   gymimg,
-  portfolioimg,
   borrowandlendahandimg,
   phantompressimg,
   paypolimg,

@@ -11,8 +11,8 @@ const Current = () => {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.1,
-        delayChildren: 0.3
+        staggerChildren: 0.05,
+        delayChildren: 0.1
       }
     }
   };
@@ -23,8 +23,7 @@ const Current = () => {
       opacity: 1, 
       x: 0,
       transition: {
-        type: "spring",
-        stiffness: 100
+        duration: 0.1
       }
     }
   };
