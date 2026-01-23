@@ -68,7 +68,7 @@ const Skills = () => {
           name="twitter:description"
           content="Discover the wide range of technical skills that Rishiwant possesses. From web development to various tools and technologies, Rishi's skill set encompasses an array of technologies to bring innovative solutions to life."
         />
-        <meta name="twitter:image" content="https://rajaryan.work/banner.png" />
+        <meta name="twitter:image" content="https://rishi-portfolio-flame.vercel.app/banner.png" />
       </Helmet>
       
       <div className="md:w-[70vw] w-[90vw] md:h-[80vh] h-[90vh] sm:p-10 p-5">
