@@ -61,6 +61,7 @@ const About = () => {
           {/* TODO: Replace rajImg with your actual profile photo */}
             <img
               src={rajImg}
+              loading="lazy"
               className=" w-full ease-in aspect-square object-cover rounded-[50%]"
               alt="Rishiwant"
             />

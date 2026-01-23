@@ -9,6 +9,7 @@ const ProjectCard = ({ item }) => (
       <div className="aspect-video">
         <img
           src={item.img}
+          loading="lazy"
           className="object-cover w-full group-hover:animate-pulse"
           alt={"Project Screenshot of " + item.title}
         />
